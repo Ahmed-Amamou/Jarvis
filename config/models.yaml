@@ -1,0 +1,16 @@
+models:
+  default:
+    primary:
+      provider: ollama
+      model: llama3.1:8b
+    fallback:
+      provider: openai
+      model: gpt-4o-mini
+
+  embedding:
+    primary:
+      provider: ollama
+      model: nomic-embed-text
+    fallback:
+      provider: openai
+      model: text-embedding-3-small
